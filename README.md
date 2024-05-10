@@ -10,6 +10,7 @@ Repository ini merupakan proyek Ujian Tengah Semester Mobile Programming 1 dari 
 ### Studi Kasus
 
 1. **Deskripsi Proyek:** Proyek ini merupakan pembuatan sebuah aplikasi sederhana yang terdiri dari 4 Activity menggunakan Android Native (Java + XML) sebagai berikut:
+
    a. SplashScreen Activity
    
    b. Login Activity
