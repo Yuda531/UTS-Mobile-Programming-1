@@ -5,9 +5,13 @@ Repository ini merupakan proyek Ujian Tengah Semester Mobile Programming 1 dari 
 Informasi Penting:
 
 Nama: Agung Yuda Pratama
+
 NIM: 21552011485
+
 Kelas: TIF RM 222MB
+
 Studi Kasus
+
 Deskripsi Proyek: Proyek ini merupakan pembuatan sebuah aplikasi sederhana yang terdiri dari 4 Activity menggunakan Android Native (Java + XML) sebagai berikut:
 a. SplashScreen Activity
 b. Login Activity
