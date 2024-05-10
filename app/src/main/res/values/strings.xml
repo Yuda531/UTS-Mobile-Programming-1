@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PertemuanUTS</string>
+    <string name="register_listening">Register to Start Listening</string>
+    <string name="welcome">Welcome to YouSong</string>
+    <string name="fulfill_regis">Complete the Registration Form</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">I forgot my password</string>
+    <string name="login">Login</string>
+    <string name="or_login_with">Or Login with</string>
+    <string name="register">Register</string>
+    <string name="or_register_with">or register with</string>
+    <string name="name">Name</string>
+</resources>
