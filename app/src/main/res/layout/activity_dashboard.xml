@@ -77,39 +77,66 @@
             android:flipInterval="2000"
             android:autoStart="true"
             android:inAnimation="@android:anim/slide_in_left"
-            android:outAnimation="@android:anim/slide_out_right"
-            >
+            android:outAnimation="@android:anim/slide_out_right">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 app:cardCornerRadius="16dp">
+
                 <ImageView
                     android:id="@+id/musicImage1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/one" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="16dp">
+
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
                     android:id="@+id/musicImage2"
-                    android:src="@drawable/two"/>
-
-                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:src="@drawable/two" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="16dp">
+
+                <ImageView
                     android:id="@+id/musicImage3"
-                    android:src="@drawable/three"/>
-
-                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:src="@drawable/three" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="16dp">
+
+                <ImageView
                     android:id="@+id/musicImage4"
-                    android:src="@drawable/four"/>
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/four" />
+
             </androidx.cardview.widget.CardView>
 
         </ViewFlipper>
+
     </LinearLayout>
 
     <androidx.cardview.widget.CardView

@@ -84,7 +84,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:drawableEnd="@drawable/done_icon"/>
+                android:drawableEnd="@drawable/done_icon"
+                android:id="@+id/usernameRegis"/>
 
             <View
                 android:layout_width="wrap_content"
@@ -101,7 +102,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:drawableEnd="@drawable/done_icon"/>
+                android:drawableEnd="@drawable/done_icon"
+                android:id="@+id/phoneRegis"/>
 
             <View
                 android:layout_width="wrap_content"
@@ -118,7 +120,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:drawableEnd="@drawable/done_icon"/>
+                android:drawableEnd="@drawable/done_icon"
+                android:id="@+id/emailRegis"/>
 
             <View
                 android:layout_width="wrap_content"
@@ -134,7 +137,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:drawableEnd="@drawable/password_icon"/>
+                android:drawableEnd="@drawable/password_icon"
+                android:id="@+id/passwordRegis"/>
 
             <View
                 android:layout_width="wrap_content"
@@ -146,7 +150,8 @@
                 android:text="@string/register"
                 app:cornerRadius="32dp"
                 android:backgroundTint="@color/merah"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:id="@+id/btnRegister"/>
 
             <View
                 android:layout_width="wrap_content"

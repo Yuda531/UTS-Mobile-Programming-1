@@ -52,7 +52,6 @@
                 android:textStyle="bold"
                 android:layout_gravity="center"/>
 
-
             <View
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"/>
@@ -68,7 +67,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:drawableEnd="@drawable/done_icon"/>
+                android:drawableEnd="@drawable/done_icon"
+                android:id="@+id/usernameLogin"/>
 
             <View
                 android:layout_width="wrap_content"
@@ -84,7 +84,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
-                android:drawableEnd="@drawable/password_icon"/>
+                android:drawableEnd="@drawable/password_icon"
+                android:id="@+id/passwordLogin"/>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -115,7 +116,8 @@
                 android:text="@string/login"
                 app:cornerRadius="32dp"
                 android:backgroundTint="@color/merah"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:id="@+id/loginBtn"/>
 
             <View
                 android:layout_width="wrap_content"
