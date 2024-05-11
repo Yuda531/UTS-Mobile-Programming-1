@@ -12,12 +12,19 @@
     import androidx.core.view.WindowInsetsCompat
 
     class MainActivity : AppCompatActivity() {
+
+        companion object {
+            var registeredUsername: String = ""
+            var registeredPassword: String = ""
+        }
+
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             Thread.sleep(3000)
             installSplashScreen()
             enableEdgeToEdge()
             setContentView(R.layout.activity_main)
+
 
             val btnRegister: Button = findViewById(R.id.btnRegister)
             btnRegister.setOnClickListener {
@@ -57,10 +64,22 @@
                     return@setOnClickListener
                 }
 
+                registeredUsername = username
+                registeredPassword = password
+
                 Toast.makeText(this, "Registrasi Berhasil!", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
             }
 
+        }
+
+        fun getRegisteredUsername(): String {
+            return registeredUsername
+        }
+
+
+        fun getRegisteredPassword(): String {
+            return registeredPassword
         }
     }

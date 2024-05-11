@@ -39,9 +39,13 @@ class LoginActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            Toast.makeText(this, "Login berhasil!", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, DashboardActivity::class.java)
-            startActivity(intent)
+            if (username == MainActivity.registeredUsername && password == MainActivity.registeredPassword) {
+                Toast.makeText(this, "Login Berhasil!", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, DashboardActivity::class.java)
+                startActivity(intent)
+            } else {
+                Toast.makeText(this, "Username atau Password Salah!", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
