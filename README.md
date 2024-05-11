@@ -22,7 +22,7 @@ Repository ini merupakan proyek Ujian Tengah Semester Mobile Programming 1 dari 
 3. **Ketentuan Khusus:**
    - Pembuatan SplashScreen dengan tampilan yang menarik.
    - Pada Register Activity, minimal terdapat objek: TextView, EditText, Button, ImageView.
-   - Implementasi event Log, Toast, dan Toast pada saat Button Register diklik.
+   - Implementasi event Log, dan Toast pada saat Button Register diklik.
    - Tampilan data pada News Portal Dashboard ditampilkan dalam listview.
 
 **Catatan:** Silakan melihat kode sumber dan dokumentasi lebih lanjut di dalam repository ini. Terima kasih!
