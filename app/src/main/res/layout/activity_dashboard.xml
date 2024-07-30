@@ -36,9 +36,10 @@
             android:layout_gravity="center"/>
 
         <ImageView
+            android:id="@+id/account"
             android:layout_width="75dp"
             android:layout_height="50dp"
-            android:src="@drawable/account"
+            android:src="@drawable/logout_logo"
             android:layout_marginLeft="110dp"/>
 
     </LinearLayout>
@@ -149,36 +150,42 @@
         app:cardCornerRadius="28dp">
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_marginBottom="20dp"
             android:padding="18dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/listen_again"
+                android:text="@string/daftar_musik"
                 android:textColor="@color/merah"
                 android:textSize="28sp"
                 android:textStyle="bold" />
 
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="20dp" />
-
-            <ListView
-                android:id="@+id/list_song"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvMusic"
                 android:layout_width="match_parent"
-                android:layout_height="300dp">
-
-            </ListView>
-
-            <View
-                android:layout_width="wrap_content"
-                android:layout_height="20dp" />
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatAddMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="52dp"
+        android:src="@drawable/add"
+        app:backgroundTint="@color/merah2"/>
+
 
 </RelativeLayout>

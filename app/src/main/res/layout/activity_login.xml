@@ -59,16 +59,30 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/username"
+                android:text="@string/email_address"
                 android:alpha="0.7"
                 android:textStyle="bold"/>
 
-            <EditText
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:drawableEnd="@drawable/done_icon"
-                android:id="@+id/usernameLogin"/>
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/emailLogin"
+                    android:paddingEnd="48dp"/>
+
+                <ImageView
+                    android:id="@+id/iconEmail"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/done_icon"/>
+            </RelativeLayout>
 
             <View
                 android:layout_width="wrap_content"
@@ -80,23 +94,38 @@
                 android:alpha="0.7"
                 android:textStyle="bold"/>
 
-            <EditText
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPassword"
-                android:drawableEnd="@drawable/password_icon"
-                android:id="@+id/passwordLogin"/>
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:id="@+id/passwordLogin"
+                    android:paddingEnd="48dp"/>
+
+                <ImageView
+                    android:id="@+id/iconPassword"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/password_icon"/>
+            </RelativeLayout>
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <CheckBox
+                    android:id="@+id/rememberMe"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/remember_me"
                     android:layout_centerVertical="true"
-                    android:alpha="0.7"/>
+                    android:alpha="0.9"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -123,38 +152,38 @@
                 android:layout_width="wrap_content"
                 android:layout_height="10dp"/>
             <TextView
+                android:id="@+id/registerOr"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/or_login_with"
                 android:layout_gravity="center"
+                android:layout_marginBottom="16dp"
                 android:alpha="0.7"/>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center">
+                <Button
+                    android:id="@+id/googleSignInButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_in_with_google"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginBottom="15dp"/>
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_margin="12dp"
-                    android:background="@drawable/fb"/>
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_margin="12dp"
-                    android:background="@drawable/twitter"/>
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_margin="12dp"
-                    android:background="@drawable/insta"/>
 
-            </LinearLayout>
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+
 
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"/>
 
 </RelativeLayout>
