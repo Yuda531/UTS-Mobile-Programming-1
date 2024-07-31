@@ -5,6 +5,15 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        getByName("debug") {
+            storeFile =
+                file("C:\\Users\\adiyo\\AndroidStudioProjects\\PertemuanUTS\\app\\music.jks")
+            storePassword = "123456"
+            keyAlias = "musicalias"
+            keyPassword = "123456"
+        }
+    }
     namespace = "id.utb.pertemuanuts"
     compileSdk = 34
 
@@ -25,6 +34,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            signingConfig = signingConfigs.getByName("debug")
         }
     }
     compileOptions {
@@ -52,6 +62,6 @@ dependencies {
     implementation("com.google.firebase:firebase-firestore")
     implementation("com.google.firebase:firebase-storage")
     implementation("com.google.firebase:firebase-auth")
-    implementation("com.google.android.gms:play-services-auth")
+    implementation("com.google.android.gms:play-services-auth:21.2.0")
     implementation("com.github.bumptech.glide:glide:4.16.0")
 }
